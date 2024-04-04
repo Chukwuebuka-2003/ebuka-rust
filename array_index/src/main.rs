@@ -21,3 +21,7 @@ fn main() {
     println!("The value of the element at index {} is: {}", index, element);
 
 }
+
+// When attempting to access an element using indexng, the index must be within the bounds of the
+// array. If the index is out of bounds, the program will panic. This is an example of Rust's
+// memory safety in action.
