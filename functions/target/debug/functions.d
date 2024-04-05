@@ -1,1 +1,1 @@
-/home/stocks/ebuka_rust/functions/target/debug/functions: /home/stocks/ebuka_rust/functions/src/main.rs
+/home/ebuka/ebuka-rust/functions/target/debug/functions: /home/ebuka/ebuka-rust/functions/src/main.rs
