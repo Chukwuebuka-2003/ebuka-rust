@@ -89,12 +89,21 @@
 // the function is a lonely 5 with no semicolon because it's an expression whose value we want to
 // return.
 
-fn main() {
-    let x = plus_three(90);
+//fn main() {
+//let x = plus_three(90);
 
-    println!("The value of x is: {x}");
+//  println!("The value of x is: {x}");
+//}
+
+//fn plus_three(x: i32) -> i32 {
+//  x + 3
+//}
+
+fn main() {
+    let y = multiply_20(90);
+    println!("The value of y is: {y}");
 }
 
-fn plus_three(x: i32) -> i32 {
-    x + 3
+fn multiply_20(y: i32) -> i32 {
+    y * 20
 }
