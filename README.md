@@ -53,3 +53,12 @@ Modules let us organize code within a crate for easy readability and easy reuse.
 Private items are internal implementation details not available for outside use.
 
 You can choose to make your module and the items within it public, this exposes them to allow external code to use and depend on them.
+
+# Paths In Rust
+To show Rust where to find an item in a module tree, you can use the path attribute. To call a function, you need to know its path in the module tree.
+
+A path can take two forms:
+- An absolute path: This is the path to the item in the root of the module tree. Absolute paths start with the crate root and end with the item you want to find.
+- A relative path: This is the path to the item in the module tree. Relative paths start with the current module and end with the item you want to find and uses self, super or an identifier in the current module.
+
+Both absolute and relative paths are followed by one or more identifiers separated by "::"
