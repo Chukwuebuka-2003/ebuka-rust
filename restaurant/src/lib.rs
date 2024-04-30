@@ -53,3 +53,10 @@ pub fn eat_at_restaurant() {
 // code to outer parent modules by using the pub keyword to make an item public.
 
 // Making a module public doesn't make its contents public either.
+
+// Starting Relative Paths with super
+// It's possible to construct relative paths that begins in the parent module rather than the
+// current module or the crate root via using the super keyword at the start of the path.
+// Using super allows you to refrence an item that you know is in the parent module, this can make
+// rearranging the module tree easier when the module is closely related to the parent, but the
+// parent miight be moved elsewhere in the module tree someday.
