@@ -66,3 +66,6 @@ Both absolute and relative paths are followed by one or more identifiers separat
 
 # Making Structs and Enums Public
 If you use pub before a struct definition, you make the struct public, but the struct fields will still be private
+
+# Enums 
+Enums are not very useful unless their variants are public. The default for enum variants is private.
