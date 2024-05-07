@@ -69,3 +69,11 @@ If you use pub before a struct definition, you make the struct public, but the s
 
 # Enums 
 Enums are not very useful unless their variants are public. The default for enum variants is private.
+
+# The Glob Operator
+This is needed when you want to bring all public items defined in a path into scope (*0
+'' use std:: collections::'';
+
+The use statement brings all public items defined in std::collections into the current scope. There's a downside of using the Glob Operator, it can make it harder to tell what names are in scope and where a name used in your program was defined
+
+The glob operator is used when testing to bring everything under test into the tests module 
