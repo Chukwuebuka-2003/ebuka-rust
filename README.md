@@ -76,4 +76,15 @@ This is needed when you want to bring all public items defined in a path into sc
 
 The use statement brings all public items defined in std::collections into the current scope. There's a downside of using the Glob Operator, it can make it harder to tell what names are in scope and where a name used in your program was defined
 
-The glob operator is used when testing to bring everything under test into the tests module 
+The glob operator is used when testing to bring everything under test into the tests module
+
+Rust allows you to split a package into multiple crates and a crate into modules so you can refer to items defined in one module from another module, this can be done by specifying absolute or relative paths.
+
+These paths can be brought into scope with a use statement so you can use a shorter path for multiple uses of the item in that scope.
+
+Modules code is private by default, but can be modified by making definitions public by adding the pub keyword
+
+# Common Collections In Rust
+- A vector allows you to store a variable number of values next to each other.
+- A string is a collection of characters.
+- A hash map allows you to associate a value with a particular key.
