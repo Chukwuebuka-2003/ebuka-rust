@@ -88,3 +88,11 @@ Modules code is private by default, but can be modified by making definitions pu
 - A vector allows you to store a variable number of values next to each other.
 - A string is a collection of characters.
 - A hash map allows you to associate a value with a particular key.
+
+# How Vectors Works In Rust
+Vectors put its values next to each other in memory, and adding a new element onto the end of the vector this might require allocating new memory and copying the old elements to the next space, if there isn't enough room to pull all the elements next to each other where the vector is currently stored. So the reference to the first element would be pointing to the deallocated memory.
+
+Iterating over a vector, whether via mutable or immutable is safe because of the borrow checker's rule.
+
+# How Enums Are Used To Store Multiple Types
+Enums can be used to store multiple types. Originally Vectors can only store values that are of the same type, this can be inconvenient but enums can fix that issue.
